@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #e2d172;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  overflow-y: auto;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden; /* tambahkan overflow-x:hidden; untuk menghindari bilah gulir horizontal */
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* Menyesuaikan margin kiri untuk memberi ruang pada sidebar */
+  padding-left: 20px; /* Memberikan ruang untuk konten utama agar tidak tertutupi oleh sidebar */
+}
+
+.sidebar-title {
+  border-bottom: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid white;
+}
+
+.sidebar-item:hover {
+  background-color: #5c562a52;
+  cursor: pointer;
+}
+
+.sidebar-item > a {
+  text-decoration: none;
+  color: white; 
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.breadcrumb {
+  padding-top: 20px;
+  color:#2e266e;
+}
+
+.breadcrumb-base {
+  color:#2e266e;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #cbcaca;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #ece09452;
+}
+
+.btn-yellow {
+  padding: 8px 20px;
+  background-color: #e2d99e;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.btn-red { 
+  padding: 8px 20px;
+  background-color: #ff5500;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn-blue { 
+  padding: 10px 20px;
+  background-color: #e2d172;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.btn-yellow:hover {
+  cursor: pointer;
+  background-color: #ecad49;
+}
+
+.btn-red:hover {
+  cursor: pointer;
+  background-color: #f88348;
+}
+
+.btn-blue:hover {
+  cursor: pointer;
+  background-color: #d98c0f;
+}
+
+.logout {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(123, 108, 234, 0.177);
+  border: 1px solid white;
+}
+
+.logout:hover {
+  background-color: rgba(27, 11, 151, 0.279);
+}
